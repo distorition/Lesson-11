@@ -11,9 +11,10 @@ namespace Lessonn_11._2
         static void Main(string[] args)
         {
             Random random = new Random();
-            int[] arr = new int[] { random.Next(1, 1000) };
+            int[] arr = new int[] { random.Next(1, 100) };
             
-            Console.WriteLine(BinataySearch(arr,16));
+            Console.WriteLine(BinataySearch(arr,16));//внутри есть еще один цикл N
+            //O(N)
         }
 
         public static int BinataySearch(int[]arr, int searchIndex)
